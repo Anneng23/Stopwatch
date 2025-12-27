@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Stopwatch</title>
+  <link rel="stylesheet" href="stopwatch.css" />
+</head>
+<body>
+  <header>
+    <h1>Digital Stopwatch</h1>
+    <div class="header-controls">
+      <button id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="card">
+    <div id="time">00:00:00:00</div>
+    <div class="controls">
+      <button id="startBtn" onclick="start()">Start</button>
+      <button id="stopBtn" onclick="stop()" disabled>Stop</button>
+      <button id="resetBtn" onclick="reset()" disabled>Reset</button>
+    </div> 
+  </main>
+
+  <script src="stopwatch.js"></script>
+</body>
+</html>
+
+
+

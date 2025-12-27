@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url(images/image.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 12px auto 8px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 3;
+} 
+
+header h1 {
+  margin: 0;
+  padding: 10px 100px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+  z-index: 4;
+}
+
+.dark header h1 {
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  box-shadow: none;
+}
+
+.header-controls {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+} 
+
+#themeToggle {
+  background: rgba(210, 255, 224, 1);
+  border: 1px solid rgba(0,0,0,100.08);
+  padding: 10px 20px;
+  border-radius: 80px;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .15s, transform .08s, color .15s, border-color .15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+#themeToggle:hover { transform: translateY(-1px); background-color: rgba(0,0,0,0.04); }
+#themeToggle:focus { outline: 2px solid rgba(0,123,255,0.18); outline-offset: 2px; }
+
+.dark #themeToggle { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
+.card {
+  width: min(90vw, 320px);
+  aspect-ratio: 2 / 1;
+  margin: auto;
+  background: linear-gradient(20deg, rgb(244, 44, 44), rgb(78, 77, 77));
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#time {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+  justify-content: space-between;
+}
+
+.controls button {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #f7f7f7;
+  cursor: pointer;
+  transition: background-color .12s, transform .06s;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) { 
+    background: #eee; 
+    transform: translateY(-1px); 
+}
+
+.dark .controls button {
+    background: #2a2a2a; 
+    color: #fff; 
+    border-color: rgba(255,255,255,0.06); 
+}
+
+.dark .controls button:hover:not(:disabled) {
+    background: #3a3a3a; 
+}
+
+.dark {
+  background: #121212;
+  color: rgb(255, 255, 255);
+}
+.dark .card {
+    background: #1e1e1e; 
+}
+
+.dark button { 
+    background: #2a2a2a; 
+    color: white; 
+}

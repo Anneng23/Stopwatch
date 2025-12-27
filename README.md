@@ -1,4 +1,5 @@
 # Stopwatch Timer App
+
 A lightweight stopwatch that tracks hours, minutes, seconds, and milliseconds.
 
 ## ⌚ Features
@@ -19,4 +20,4 @@ A lightweight stopwatch that tracks hours, minutes, seconds, and milliseconds.
 
 ## 🚫 Error Fix Highlight
 - Improved formatting so time doesn't break after 60 seconds
-- Start button is disabled while running
+- start button disabled while running
